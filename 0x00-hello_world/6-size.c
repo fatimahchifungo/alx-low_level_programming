@@ -1,15 +1,21 @@
 #include <stdio.h>
 /**
- *main - Entry point
- *Return: always 0 (success)
+ * main - Prints out the sizes of various data types on the computer
+ * this program is compiled on.
+ * Return: 0 if success.
  */
 int main(void)
 {
-printf("size of a char: %lu byte(s)", sizeof(char));
-printf("size of an int: %lu byte(s)", sizeof(int));
-printf("size of a long int: %lu byte(s)", sizeof(long int));
-printf("size of a long long int: %lu byte(s)", sizeof(long long int));
-printf("size of a float: %lu byte(s)", sizeof(float));
-return (0);
-}
+	char c;
+	int i;
+	long l;
+	long long ll;
+	float f;
 
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
+}
