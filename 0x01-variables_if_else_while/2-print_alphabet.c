@@ -17,4 +17,7 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> f067f693a12f098ed13df5230553b8583cde1c60

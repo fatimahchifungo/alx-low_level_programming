@@ -1,4 +1,29 @@
 #include <stdio.h>
+<<<<<<< HEAD
+/**
+ * main - print numbers from 00 to 99.
+(*
+ * Return: 0 on success
+ */
+int main(void)
+{
+	int i = '0';
+	int j = '0';
+	int k = '0';
+
+	while (i <= '7')
+	{
+		while (j <= '8')
+		{
+			while (k <= '9')
+			{
+				if (i < j && j < k)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (!(i == '7' && j == '8' && k == '9'))
+=======
 
 /**
  * main - prints all possible different combinations of three digits
@@ -20,13 +45,26 @@ int main(void)
 					putchar(m);
 					putchar(l);
 					if (n != 55 || m != 56)
+>>>>>>> f067f693a12f098ed13df5230553b8583cde1c60
 					{
 						putchar(',');
 						putchar(' ');
 					}
+<<<<<<< HEAD
+
+				}
+				k++;
+			}
+			k = '0';
+			j++;
+		}
+		j = '0';
+		i++;
+=======
 				}
 			}
 		}
+>>>>>>> f067f693a12f098ed13df5230553b8583cde1c60
 	}
 	putchar('\n');
 	return (0);
